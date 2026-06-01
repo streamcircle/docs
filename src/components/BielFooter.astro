@@ -1,0 +1,103 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default {...Astro.props} />
+
+<biel-button
+  project="mtzvzmjwbg"
+  header-title="Tweenly Assistant"
+  button-position="bottom-right"
+  modal-position="sidebar-right"
+  button-style="dark">
+  Ask AI
+</biel-button>
+
+<!-- <style is:global>
+  .right-sidebar-container {
+    pointer-events: none !important;
+  }
+
+  .right-sidebar-container a,
+  .right-sidebar-container button {
+    pointer-events: auto !important;
+  }
+</style> -->
+
+<style is:global>
+  /* Prevent Starlight sidebar from blocking clicks */
+  .right-sidebar-container {
+    pointer-events: none !important;
+  }
+
+  .right-sidebar-container a,
+  .right-sidebar-container button {
+    pointer-events: auto !important;
+  }
+
+  /* Tweenly branding */
+  biel-button {
+    --biel-primary-color: #007A98;
+    --biel-secondary-color: #107F76;
+    --biel-accent-color: #82B820;
+    --biel-text-color: #0F1113;
+    --biel-heading-color: #193153;
+    --biel-border-radius: 6px 12px 6px 20px;
+    --biel-font-family: Inter, system-ui, sans-serif;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 999999 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Floating button */
+  biel-button::part(button) {
+    background: linear-gradient(
+      135deg,
+      #007A98 0%,
+      #107F76 60%,
+      #82B820 100%
+    );
+    color: #ffffff;
+    border-radius: 6px 12px 6px 20px;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(0, 122, 152, 0.28);
+    cursor: pointer;
+  }
+
+  /* Modal */
+  biel-button::part(modal) {
+    border-radius: 8px 16px 8px 32px;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  /* Header */
+  biel-button::part(header) {
+    color: #193153;
+    font-family: Manrope, Inter, system-ui, sans-serif;
+    font-weight: 700;
+  }
+
+  /* User messages */
+  biel-button::part(user-message) {
+    background: #193153;
+    color: #ffffff;
+    border-radius: 8px 16px 8px 32px;
+  }
+
+  /* Assistant messages */
+  biel-button::part(assistant-message) {
+    background: #F3F7F8;
+    color: #0F1113;
+    border-radius: 8px 16px 8px 32px;
+  }
+
+  /* Links / source buttons */
+  biel-button::part(link),
+  biel-button::part(source-button) {
+    color: #007A98;
+  }
+</style>
