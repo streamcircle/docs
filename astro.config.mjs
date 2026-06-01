@@ -15,7 +15,6 @@ export default defineConfig({
                 replacesTitle: true,
             },
             social: {
-                facebook: "https://www.facebook.com/app.tween.ly/",
                 linkedin: "https://www.linkedin.com/company/tween-ly/",
                 youtube: "https://www.youtube.com/@Tweenly",
             },
