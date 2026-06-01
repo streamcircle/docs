@@ -1,6 +1,6 @@
 ---
 title: Data Source & API Control
-description: How to connect graphics to external data sources and control them via API commands in Tweenly.
+description: Connect graphics to external data feeds and control text and images via API at runtime.
 ---
 
 Tweenly graphics can be connected to structured **data feeds** (JSON, XML, TXT) or controlled via **API commands** from a playout or automation system.  
@@ -24,13 +24,13 @@ If a Data Source is edited in one graphics file, the changes automatically apply
 
 ## Creating a Data Source
 
-1. In the **Objects Panel**, click **Data Source**.  
+1. In the **Left Sidebar**, click **Data Source**.  
 2. A new data source setup window will appear.  
 3. Complete the three-step process:  
 
 ### Step 1: Data source specification
 - **Name** – The name of the data source.  
-- **Slug** – A unique identifier. 🚨 Must be unique across the workspace.  
+- **Slug** – A unique identifier. Must be unique across the workspace.  
 - **URL** – Link to the source (JSON or XML).  
 - **Type** – Select the format (XML or JSON).  
 - **Refresh option** – Enable automatic refresh at a specified interval (seconds). A green label on the timeline indicates refresh events.  
@@ -66,9 +66,6 @@ To edit:
 3. Modify details and **Save**.  
 4. Manually update graphics that use the Data Source to apply changes.  
 
-:::caution
-Changes apply across the workspace, but each file must be manually updated to reflect modifications correctly.
-:::
 
 ## Deleting a Data Source
 
@@ -100,16 +97,63 @@ To update the image source:
 2. In the **Right Sidebar > Image section**, click **Replace image**.  
 3. Choose a new static URL or a Data Source attribute.  
 
+## Example: Sports score feed
+
+Here's a typical workflow using a JSON data source for live sports scores.
+
+### Sample JSON feed
+
+```json
+{
+  "match": {
+    "home_team": "FC Praha",
+    "away_team": "SK Brno",
+    "home_score": 2,
+    "away_score": 1,
+    "status": "2nd Half",
+    "minute": 67
+  }
+}
+```
+
+### Setup in the Editor
+
+1. Create a Data Source with **Type: JSON** and the feed URL.
+2. In Step 3 (Data Selection), select attributes:
+   - `match.home_team` → rename to `home-team`
+   - `match.away_team` → rename to `away-team`
+   - `match.home_score` → rename to `home-score`
+   - `match.away_score` → rename to `away-score`
+   - `match.minute` → rename to `minute`
+3. Enable **auto-refresh** every 10 seconds.
+4. Bind attributes to text objects:
+   - Home team name text → `{score-feed/home-team}`
+   - Score text → `{score-feed/home-score}` : `{score-feed/away-score}`
+   - Minute text → `{score-feed/minute}'`
+
+The graphic now updates automatically every 10 seconds with the latest data from the feed.
+
+### Sample XML feed
+
+```xml
+<match>
+  <home_team>FC Praha</home_team>
+  <away_team>SK Brno</away_team>
+  <home_score>2</home_score>
+  <away_score>1</away_score>
+  <status>2nd Half</status>
+  <minute>67</minute>
+</match>
+```
+
+The setup process is identical — select **Type: XML** in Step 1, and the attribute tree in Step 3 will reflect the XML structure.
+
 ## API Control
 
-In addition to static Data Sources, Tweenly graphics can also be updated by **API commands**.  
-- A playout or automation system can send values (text, images, ticker entries) in real time.  
-- Input values are applied instantly during playback.  
-- No manual coding or scripting is required — the binding between API input and object fields is done in the editor.  
+In addition to Data Sources, Tweenly graphics can also be updated by **API commands** at runtime.
+- A playout or automation system can send values (text, images, ticker entries) via API commands.
+- Input values are applied before playback starts — the system sets text and image fields, then triggers the animation.
+- No manual coding or scripting is required — the binding between API input and object fields is done in the Editor.
 
-## Benefits
-
-- Centralized management of external data.  
-- Real-time updates without re-exporting graphics.  
-- Flexible integration with playout and automation systems.  
+For the full API reference, see [API Control](/integration/api-control/). For a practical integration walkthrough, see [Playout Integration Guide](/integration/playout-integration/).
 

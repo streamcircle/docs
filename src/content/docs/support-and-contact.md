@@ -1,22 +1,20 @@
 ---
 title: Support & Contact
-description: How to get help and contact the Tweenly support team.
+description: Get help and contact the Tweenly support team.
 ---
 
-If you have any questions or need assistance, we're here to help!
-
-### 📧 Contact Tweenly Support
+## Contact support
 
 For general inquiries or technical support, contact us at **[info@tweenly.io](mailto:info@tweenly.io)**.
 
-### 📖 Documentation & Guides
+## Documentation
 
-Before reaching out, check our **Getting Started**, **Navigating Tweenly** and **User Guide** sections for answers to common questions.
+Before reaching out, check the [Getting Started](/getting-started/installation/), [Editor](/user-guide/editor-overview/), and [Gallery & Assets](/user-guide/gallery-overview/) sections for answers to common questions.
 
-### 💡 Reporting Issues & Feedback
+## Reporting issues and feedback
 
-Found a bug? Have a feature request? Let us know by emailing **[info@tweenly.io](mailto:info@tweenly.io)** with the subject **"Bug Report" or "Feature Request."**
+Found a bug or have a feature request? Email **[info@tweenly.io](mailto:info@tweenly.io)** with the subject **"Bug Report"** or **"Feature Request"**.
 
-### 🙌 Community & Updates
+## Updates
 
-Stay up to date with Tweenly’s latest improvements in the **Release Notes**.
+See the [Release Notes](/release-notes/editor/v218/) for recent changes.

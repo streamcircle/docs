@@ -1,40 +1,77 @@
 ---
 title: Built-in Test App
-description: How to simulate API inputs and test graphics inside Tweenly before playout.
+description: Simulate API inputs and test graphic behavior before playout.
 ---
 
-The Test App allows you to **simulate API inputs** and preview how graphics behave under different conditions. This makes it possible to test dynamic content and verify behavior without requiring a playout or automation system.  
+The Test App allows you to **simulate API inputs** and preview how graphics behave under different conditions — without requiring a playout or automation system.
 
 :::note
-The Built-in Test App is **available in Free and Unlimited plans.** 
+The Built-in Test App is available in **Free and Unlimited** plans.
 :::
 
-## Using the Test App
+## Opening the Test App
 
-1. Open the **Test App** from the main toolbar.  
-2. Select a graphic to test.  
-3. Enter test values for text, images, or styles.  
-   - You can type values manually.  
-   - Or let the Test App generate random strings within a defined range (useful for stress testing).  
-4. Preview the graphic to see how it behaves with the test input.  
+1. In the Editor, click the **Test App** button in the main toolbar (top bar).
+2. The Test App opens in a new panel showing the current graphic.
 
-## What Can Be Tested
+<!-- ![TODO: screenshot of Test App button in toolbar and the Test App panel](../../../assets/assets/test-app-overview.png) -->
 
-- **Text fields** – replace values with custom input or randomized text.  
-- **Images** – swap image URLs to check scaling, loading speed, and placement.  
-- **Tickers** – verify that scrolling or crawling content updates correctly.  
-- **Styles and colors** – test alternative formatting without editing the graphic.  
+## Testing text fields
 
-## Benefits
+The Test App displays all text fields marked as **isTextEditable**. For each field:
 
-- **Fast validation** – test graphics without external systems.  
-- **Error detection** – identify layout issues early (e.g., text overflow or broken image links).  
-- **Realistic simulation** – replicate how a graphic will react to incoming API values.  
-- **Production readiness** – ensure graphics are stable before export and playout.  
+1. Type a custom value directly in the input box.
+2. The graphic preview updates immediately.
 
-## Best Practices
+### Random text generation
 
-- Test with both **short and long text values** to confirm that layouts remain consistent.  
-- Use **randomized content generation** to quickly stress-test tickers and text objects.  
-- Preview image replacement with different **resolutions and aspect ratios**.  
+Click the **randomize** button next to a text field to generate random strings. Set the **word count range** (min–max) to control the length.
+
+This is useful for stress-testing layouts — checking that text wrapping, fitting, and overflow behave correctly with both short labels and long names.
+
+## Testing images
+
+For image fields marked as **isImageEditable**:
+
+1. Enter a new image URL in the input box.
+2. The graphic preview updates with the new image.
+
+Test with images of different aspect ratios and resolutions to verify that **background-size** (`cover` / `contain`) and **background-position** work as expected.
+
+## Testing tickers
+
+If the graphic contains ticker objects with data-bound content:
+
+1. Edit the ticker entries in the Test App.
+2. Verify that scrolling/crawling updates correctly with the new text.
+
+## Testing playback
+
+The Test App includes playback controls:
+
+- **Play** / **Pause** — test the full animation sequence.
+- **Timeline scrubbing** — drag the playhead to preview specific moments.
+- Use this to verify that **labels** (pause, jump, refresh) trigger correctly.
+
+## Best practices
+
+- Test with both **short and long text values** to confirm that layouts remain consistent.
+- Use **randomized content generation** to quickly stress-test tickers and text objects.
+- Preview image replacement with different **resolutions and aspect ratios**.
+- Test the full animation cycle: intro → pause label → continue → outro.
+- Check **edge cases**: empty text, very long single words (no spaces), missing images.
+
+<!-- *TODO: Doplnit — Martina:*
+
+- *Dá se v Test App testovat i styling (barvy, fonty), nebo jen text a obrázky?*
+- *Zobrazuje Test App data z Data Source, nebo jen editable fields?*
+- *Existuje možnost importovat testovací data z JSON (bulk test)?* -->
+
+## TL;DR
+
+- Open the Test App from the **main toolbar** in the Editor.
+- Test **text fields** by typing values or using random text generation.
+- Test **images** by entering new URLs.
+- Use **playback controls** to verify the full animation cycle.
+- Stress-test with randomized content to catch layout issues before going live.
 

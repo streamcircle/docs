@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-description: ...
+description: Tweenly privacy policy — how we collect, use, and protect your data.
 ---
 
 _Last Updated: 16.10.2023_

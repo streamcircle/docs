@@ -1,21 +1,21 @@
 ---
 title: Graphics Files
-description: Overview of graphic files, their metadata, and related actions in Tweenly.
+description: Create, save, duplicate, export, and delete graphics files in Tweenly.
 ---
 
-Each graphics file consist of:
+Each graphics file consists of:
 
 - The **graphic scene**: The visual representation of your design.
 - **Metadata**: File information such as title, description, and tags.
 
-### Metadata Fields
+## Metadata fields
 
 - **Title**: The name of the file.
-- **Description**: A short summary visible in the Editor, Gallery, and Store.
+- **Description**: A short summary visible in the Editor and Gallery.
 - **Tags**: Keywords used for searching.
 - **Workspace**: The file’s storage location.
 - **Final Flag**: "Locks" the file to prevent further edits. To modify, duplicate or unlock it.
-- **Thumbnail**: A preview image in the Gallery and Store.
+- **Thumbnail**: A preview image in the Gallery.
 
 
 ![Graphics File Settings](../../../assets/assets/graphics-file.png)
@@ -71,7 +71,7 @@ Duplicated files retain all objects, animations, and settings.
 
 ### Deleting a Graphics File
 
-Deleted files cannot be recovered. If the file was published in the Store, it will no longer be available for purchase.
+Deleted files cannot be recovered.
 
 1. Open the **More** menu.
 2. Click **Delete** to remove the file permanently.
@@ -80,16 +80,16 @@ Deleted files cannot be recovered. If the file was published in the Store, it wi
 
 ## Exporting a Graphics File
 
-Graphics files can be exported in two formats, depending on how you plan to use them:
+Export your graphic for use in a playout system or for offline sharing.
 
-### 1. Package (Recommended)
-Exports the entire file with all assets included in a single folder (ZIP). This ensures offline access, smooth playback, and independence from an internet connection.
+1. Open the **More** menu in the top bar.
+2. Select **Export Package** (ZIP) or **Export HTML**.
 
-### 2. HTML Export
-Creates a lightweight HTML file, while storing all linked assets (such as images, and fonts) online. This option minimizes file size but requires a stable internet connection and access to the asset repository.
+For a full comparison of export formats, plan restrictions, and when to use which, see [Export Options](/getting-started/export-options/).
 
-:::tip
-**Which format should you choose?**
-- **Use Package** if you need to work offline or require fully self-contained files.
-- **Use HTML** if you want a smaller file and don’t mind linking assets online.
-:::
+## TL;DR
+
+- Graphics files contain a scene (visual content) and metadata (title, description, tags, workspace).
+- Tweenly does not auto-save — save manually with **Save** or `Cmd/Ctrl + S`.
+- **Clear** removes objects but keeps metadata. **Delete** removes the file permanently.
+- Export as **Package** (ZIP, offline) or **HTML** (lightweight, requires internet).

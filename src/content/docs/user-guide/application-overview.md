@@ -1,24 +1,25 @@
 ---
 title: Application Overview
-description: Overview of the core pages and features in Tweenly.
+description: Navigate the four main sections of Tweenly — Editor, Gallery, Workspaces, and Profile.
 ---
 
-Tweenly consists of four key sections – editor, gallery, workspaces, and user profile.
+Tweenly consists of four key sections — Editor, Gallery, Workspaces, and Profile.
 
-### 1. Editor
+## Editor
+
 The **Editor** is where you create, animate, and manage broadcast graphics.
 
 - **Top bar**: Access the main menu and graphic file settings.
 - **Left sidebar**: Add objects and manage the object tree.
-- **Canvas**: Located in the center. This is where the graphic objects are rendered.
-- **Right sidebar**: Adjust object properties, styles and animations.
-- **Bottom panel**: Control animations using the timeline, and playback tools.
+- **Canvas**: The central area where graphic objects are rendered.
+- **Right sidebar**: Adjust object properties, styles, and animations.
+- **Bottom panel**: Control animations using the timeline and playback tools.
 
 ![Editor Overview](../../../assets/assets/editor-overview.png)
 
-### 2. Gallery
+## Gallery
 
-The **Gallery** is your personal graphics library, where you can browse, manage, and organize graphics files and assets.
+The **Gallery** is where you browse, manage, and organize graphics files and assets.
 
 - **Filters**: Filter by workspace, type, status, or author.
 - **Sorting**: Sort by title or date updated.
@@ -26,20 +27,19 @@ The **Gallery** is your personal graphics library, where you can browse, manage,
 
 ![Gallery Overview](../../../assets/assets/gallery-overview.png)
 
-### 3. Workspaces
+## Workspaces
 
-Workspaces provide personal and shared environments for managing projects.
+Each workspace contains its own graphics files and assets. Shared workspaces let team members access and edit the same files.
 
 - **Personal and Own Workspaces**: Every user has a personal workspace, with additional ones available based on the license type.
 - **Members**: Add collaborators with different roles (Owner, Admin, Collaborator) to work on shared files.
 
 ![Workspace Detail](../../../assets/assets/workspace-detail.png)
 
-### 4. Profile
+## Profile
 
-The **Profile**  section allows you to manage personal settings, and licensing.
+In the **Profile** section, edit your name, email, password, and license plan.
 
-- Edit name, email, and password.
 - Manage your license.
 - Delete your account if needed.
 

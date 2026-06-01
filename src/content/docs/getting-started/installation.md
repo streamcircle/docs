@@ -1,11 +1,11 @@
 ---
 title: Installation
-description: Step-by-step guide to installing and setting up Tweenly.
+description: Set up a Tweenly account and start creating graphics.
 ---
 
-This guide explains how to set up Tweenly and start creating graphics in just a few steps. Since Tweenly is web-based, no manual installation is required.
+Tweenly is web-based — no manual installation is required. Create an account and open the Editor in your browser.
 
-### System Requirements
+## System requirements
 
 To use Tweenly, ensure you have:
 
@@ -13,12 +13,10 @@ To use Tweenly, ensure you have:
 - The latest version of **Google Chrome**.
 
 :::tip
-Tweenly is optimized for **Google Chrome**. Avoid using another web browsers.
+Tweenly is optimized for **Google Chrome**. Avoid using other web browsers.
 :::
 
-### Setting Up Tweenly
-
-Follow these steps to start using Tweenly:
+## Setting up Tweenly
 
 1. **Create an Account**
    - Go to the <a href="https://editor.tweenly.io/signup" target="_blank" rel="noopener noreferrer">signup page</a>.
@@ -31,29 +29,17 @@ Follow these steps to start using Tweenly:
 
 3. **Choose Your License**
    - A Free license is activated automatically.
-   - You can begin using Tweenly immediately or upgrade your license at any time via the **Profile > License & Billing** section.
-   - You can find all plans with pricing <a href="https://tweenly.io/#pricing" target="_blank" rel="noopener noreferrer">here</a>.
+   - Upgrade at any time via **Profile > License & Billing**.
+   - See all plans and pricing at <a href="https://tweenly.io/#pricing" target="_blank" rel="noopener noreferrer">tweenly.io/pricing</a>.
 
 4. **Set Up Your Workspace**
    - Each user gets a default **Personal** workspace.
-   - Paid plans allow for custom workspaces and team collaboration.
-   - Workspaces allow you to organize your projects and collaborate with team members.
+   - Paid plans allow you to create additional workspaces and invite team members.
 
 5. **Start Creating Graphics**
-   - After logging in, you'll enter the **Editor**.
-   - From here, start creating new graphic files, or go to **Gallery**, or **Store** to browse some templates and examples.
+   - After logging in, you enter the **Editor**.
+   - From here, create new graphic files, or go to the **Gallery** to browse your existing files.
 
-<!-- ### Optimizing Chrome for Tweenly
+## Updating Tweenly
 
-For the best performance, adjust these **Chrome settings**:
-
-- **Enable Hardware Acceleration**:
-   - Go to **Settings > System** and toggle on **Use hardware acceleration when available** for smoother performance when working with complex animations.
-- **Clear Cache Regularly**:
-   - Prevent conflicts with Tweenly updates by clearing cache under **Settings > Privacy and Security > Clear browsing data**.
-- **Pop-up Blockers**:
-   - Allow Tweenly pop-ups to ensure smooth exporting and publishing. -->
-
-### Updating Tweenly
-
-Tweenly is always up to date. Since it’s web-based, you’ll automatically use the latest version with every login—no manual updates required.
+Since Tweenly is web-based, you always use the latest version — no manual updates required.

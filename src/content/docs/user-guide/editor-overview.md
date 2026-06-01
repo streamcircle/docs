@@ -1,11 +1,11 @@
 ---
 title: Editor Overview
-description: A detailed overview of Tweenly’s Editor interface and key features.
+description: Learn the Editor layout — top bar, sidebars, canvas, and timeline.
 ---
 
-The **Editor** is the core of Tweenly, where you create, edit, and animate broadcast graphics. This page provides an overview of the **interface, layout, and essential tools** used to design and manage graphic files.
+The **Editor** is where you create, edit, and animate broadcast graphics.
 
-## Editor Layout
+## Editor layout
 
 The Editor consists of five key sections:  
 
@@ -19,7 +19,7 @@ The Editor consists of five key sections:
 
 ---
 
-## 1. Top Bar (File Management)
+## 1. Top bar (file management)
 
 The **Top Bar** provides quick access to essential file actions.  
 
@@ -28,104 +28,60 @@ The **Top Bar** provides quick access to essential file actions.
   - **Save** – Manually save your work.  
   - **More** – Access **New, Duplicate, Export and Clear** actions.  
 
-<!-- 👉 For more details on **file management**, see [Graphics File](#).   -->
-
 ---
 
-## 2. Left Sidebar (Object Management)
+## 2. Left sidebar (object management)
 
-The **Left Sidebar** allows you to add objects and manage their hierarchy.  
+The **Left Sidebar** is split into two panels:
 
-### Adding Objects
-Tweenly supports three primary object types:  
-- **Rectangle** – For backgrounds, masks, or layout elements.  
-- **Text** – Supports both system and uploaded fonts.  
-- **Image** – Accepts `png, jpg, bmp, gif` formats.  
-- **Image sequences**
-- **Crawl ticker**
-- **Scroll ticker**
+- **Object Tree** (top) — object hierarchy and controls for adding new objects.
+- **Data Source** (bottom) — data sources linked to the current graphic.
 
-### Object Tree
-- Objects **reordered** (move up, down, to the root), or **nested** (e.g., text inside a rectangle).  
-- **Right-click** an object to duplicate, delete, or create child objects.  
-- **Nesting is limited**:  
-  - ✅ **Rectangles & Images**: Can contain child objects.  
-  - ❌ **Text, Image sequences and Tickers**: Cannot have children.  
+### Adding objects
 
-<!-- ## **Working with Objects**  
+Click an object type in the Left Sidebar to add it to the scene: **Rectangle**, **Text**, **Image**, **Sequence**, **Crawl Ticker**, or **Scroll Ticker**.
 
-### **Rectangle**  
-- Used for backgrounds, masks, and layout structures.  
-- Supports gradients, opacity, and overflow controls.  
+### Object tree
 
-### **Image**  
-- Supports `bmp, jpeg, png, gif` formats.  
-- Can contain child objects.  
+- **Reorder** objects by moving them up, down, or to the root level.
+- **Nest** objects by placing them inside a rectangle or image container.
+- **Right-click** an object to duplicate, delete, or add a child object.
 
-### **Text**  
-- Supports **predefined system fonts** and **custom fonts**.  
-- **Text Sizing Options**:  
-  - **Fixed** → The font size remains constant.  
-  - **Fitting** → The text resizes dynamically to fit its bounding box.  
+For full details on each object type, properties, and nesting rules, see [Objects](/user-guide/objects/).
 
-### **Common Object Actions**  
-- **Duplicate** – Right-click in the Object Tree or Canvas.  
-- **Delete** – Right-click and select **Delete**.   -->
+## 3. Canvas (main workspace)
 
-<!-- 👉 Learn more about **object hierarchy and structuring** in [Working with Objects](#).   -->
+The **Canvas** is where you visually arrange and modify graphics. Use the **Selection tool** (`V`) to select and manipulate objects, or the **Hand tool** (`H`) to pan. Zoom from 10% to 200% with the slider, or fit the canvas to the viewport.
 
-## 3. Canvas (Main Workspace)
+For full details on zoom, panning, selection, resizing, grid snapping, and canvas settings, see [Canvas & Navigation](/user-guide/canvas/).
 
-The **Canvas** is where you visually arrange and modify graphics.  
-
-- **Zoom & Pan**: Adjust your view to focus on specific areas.
-- **Manipulate Objects**: Move, resize, and rotate objects.
-- **Selection & Grouping**: Select multiple objects for bulk actions.
-
-## 4. Right Sidebar (Object Properties & Animations)
+## 4. Right sidebar (object properties & animations)
 
 The **Right Sidebar** provides tools for modifying objects and animations.  
 
-### Object Properties
+### Object properties
 
-Each object in the scene has configurable properties, including:
-
-- **Position**: X/Y coordinates.
-- **Size**: Width and height.
-- **Color**: For rectangles and text.
-- **Borders and Gradients**: For rectangles.
-- **Overflow**: Manage text overflow or masking.
+Select any object to configure its properties: position, size, color, borders, gradients, transforms, filters, and more. See [Objects](/user-guide/objects/) for a full property reference.
 
 ### Animations
 
-The **Animations tab** lets you add and customize animations for the selected object. Adjust animation types, duration, and easing (e.g., fade, move, scale).
+The **Animate** tab lets you add and customize animations for the selected object. Adjust animation types, duration, and easing. See [Animations & Timeline](/user-guide/animations-timeline/) for the full guide.
 
-<!-- 👉 For advanced animation techniques, see [Animation Tools](#).   -->
-
-## 5. Bottom Panel (Timeline & Animation Control)
+## 5. Bottom panel (timeline & animation control)
 
 The **Timeline** controls animation playback and timing.  
 
-- **Keyframes** – Define specific points in time when an object changes (e.g., moves or fades).  
+- **Animations** – Define how objects change over time (e.g., move, fade, or scale). Each animation appears as a block on the timeline.  
 - **Playhead** – Drag the playhead to preview different points in the timeline.  
 - **Duration & Timing** – Adjust the start time, end time, and duration of animations by dragging objects on the timeline.  
 
-### Animation Controls
-- **Add Keyframes** – Click the **Add Keyframe** button.  
-- **Playback Controls** – Play, pause, and review animations.  
+### Playback & labels
 
-<!-- 👉 Learn how to **refine animations** in [Animation Tools](#).   -->
+Use playback controls (play, pause, go to begin, next, outro) to preview your graphic. Add **labels** to the timeline to define pause points, jumps, or data refresh triggers. See [Animations & Timeline](/user-guide/animations-timeline/) for details on labels, easing, and code triggers.
 
-<!--
+## TL;DR
 
----
-
-### Advanced Features
-
-For more complex graphics, the Tweenly Editor offers several powerful features:
-
-- **Custom Keyframes**: Create intricate animations using keyframe controls.
-- **Groups and Layers**: Manage multiple objects together by grouping or layering them.
-- **HTML & JS Export**: Export your graphics as HTML and JavaScript for broadcast integration. -->
-
-<!-- 👉 See [Advanced Editor Tools](#) for details.  -->
+- The Editor has five sections: **Top Bar**, **Left Sidebar**, **Canvas**, **Right Sidebar**, and **Bottom Panel (Timeline)**.
+- Add objects from the **Left Sidebar**, arrange them on the **Canvas**, configure properties in the **Right Sidebar**.
+- Control animation timing and playback in the **Timeline**.
+- Save manually — Tweenly does not auto-save.

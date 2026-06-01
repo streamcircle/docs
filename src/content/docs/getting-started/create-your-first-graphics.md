@@ -1,93 +1,73 @@
 ---
-title: Create Your First Graphics
-description: A quick start guide to creating your first graphics project in Tweenly.
+title: Create Your First Graphic
+description: A step-by-step guide to creating, animating, and exporting your first graphic in Tweenly.
 ---
 
-## Quick Start: Create Your First Graphics
+Follow these steps to go from a blank canvas to an exported graphic file.
 
-This guide walks you through the essential steps to create and save your first graphics in Tweenly.
+## Step 1: Open the Editor
 
-### Step 1: Open the Editor
+After logging in, Tweenly directs you to the **Editor**. This is where you design and animate graphics.
 
-Once you've logged in, Tweenly automatically directs you to the **Editor**, where you can create and animate graphics.
+For a full description of the Editor interface, see [Editor Overview](/user-guide/editor-overview/).
+
+## Step 2: Add Objects to the Scene
+
+1. In the **Left Sidebar**, click **Rectangle**, **Text**, or **Image** to add an object to the canvas.
+2. Position and resize the object on the **Canvas**.
+3. Select the object and adjust its properties in the **Right Sidebar** — color, size, font, borders, and more.
+
+Repeat to build your graphic layout. Nest objects by dragging them into a rectangle container.
 
 :::tip
-For a detailed overview of the Editor, see <a href="https://docs.tweenly.io/user-guide/editor-overview.md" target="_blank" rel="noopener noreferrer">Editor Overview</a> page.  
+See [Objects](/user-guide/objects/) for details on each object type and its properties.
 :::
 
-### Step 2: Create Your First Graphic
+## Step 3: Animate Your Graphic
 
-1. **Add Objects** to the Scene:
-   - Click on the **rectangle**, **text**, or **image** buttons in the **left sidebar** to add these objects to your scene.
-   - Once an object is added, use the **canvas** to position and resize it.
+1. Select an object on the **Canvas**.
+2. In the **Right Sidebar**, open the **Animate** tab.
+3. Click **+ animation** to add an animation (e.g., fade in, slide, scale).
+4. Adjust the **duration**, **delay**, and **easing** as needed.
+5. Use the **Timeline** at the bottom to reposition and resize animation blocks.
+6. Drag the **Playhead** to preview the animation at any point in time.
+7. Click **Play** to preview the full animation.
 
-2. **Adjust Object Properties**:
-   - Select an object on the canvas.
-   - In the **right sidebar**, adjust its properties such as color, size, and position.
-   - For text objects, you can edit the font, size, and alignment.
+:::tip
+See [Animations & Timeline](/user-guide/animations-timeline/) for the full animation guide, including easing options and labels.
+:::
 
-3. **Preview Your Graphic**:
-   - Use the **Preview** button in the top bar to see how your graphic will look in real-time.
+## Step 4: Save Your Graphic
 
-### Step 3: Save Your Graphic
+:::caution
+Tweenly does not auto-save. Always save manually.
+:::
 
-Saving your progress is essential, as Tweenly does not have an auto-save feature.
+1. Click **Save** in the top bar.
+2. Fill in the metadata:
+   - **Title** — name your graphic file.
+   - **Description** — optionally add a summary.
+   - **Tags** — add keywords for easier searching in the Gallery.
+   - **Workspace** — choose where to store the file.
+3. Click **Save**. The file is now stored in the [Gallery](/user-guide/gallery-overview/).
 
-1. Click the **Save** button in the top bar.
-2. A form will open. Fill in the following details:
-   - **Title**: Name your graphic file.
-   - **Description**: Optionally add a description.
-   - **Tags**: Add relevant tags for easier searching in the Gallery.
-   - **Workspace**: Choose the workspace where you want to store the file.
-3. Click **Save** to store the file in the **Gallery**.
+For quick saves during your work, click the **Save** icon without changing metadata.
 
-For quick saves during your work, simply click the **Save** icon without changing the metadata.
-
-### Step 4: Explore the Gallery
-
-After saving your file, you can access it in the **Gallery**. The Gallery is where all your graphic files are stored and organized.
-
-- Use the **search bar** to locate your graphic by title, description, or tags.
-- You can also filter by status (draft, final, published) or author.
-
-In the Gallery, you can:
-
-- **Open** files to continue editing in the Editor.
-- **Duplicate** files to create new versions.
-- **Publish** graphics to the Store (for sharing or selling).
-- **Export HTML** to download your graphic for external use.
-
-### Step 5: Animate Your Graphic
-
-Now that you've created a static graphic, let's add some animation:
-
-1. **Add Animations**:
-   - Select an object in the **canvas**.
-   - In the **right sidebar**, click the **Animations** tab.
-   - Choose an animation type (e.g., fade in, move, scale) and adjust the timing.
-
-2. **Use the Timeline**:
-   - The timeline panel at the bottom of the Editor lets you control when and how long the animations play.
-   - Drag objects along the timeline to set when their animation starts and ends.
-   - Use the **playhead** to preview the animation.
-
-3. **Preview Animation**:
-   - Click **Preview** in the top bar to see your animated graphic in action.
-
-### Step 6: Export Your Work
-
-When you're satisfied with your graphic and animations, you can export it for use outside of Tweenly.
+## Step 5: Export Your Work
 
 1. Open the **More** menu in the top bar.
-2. Click **Export HTML**.
-3. The file will be downloaded to your local disk, ready for integration into your broadcast system.
+2. Choose an export format:
+   - **Export Package** (ZIP) — self-contained file with all assets. Recommended for production.
+   - **Export HTML** — lightweight file with online asset references.
+3. The file downloads to your computer, ready for integration into your playout system.
 
----
+:::tip
+See [Export Options](/getting-started/export-options/) for details on choosing the right format.
+:::
 
-### What’s Next?
+## What's Next?
 
-You’ve now completed the basic steps to create, save, animate, and export a graphic in Tweenly! From here, you can:
-
-- Explore more advanced features in the **Editor**, like managing complex animations and working with layers.
-- Visit the **Store** to browse and purchase templates or publish your own graphics for others.
-- Learn about **Workspaces** to manage collaborative projects.
+- Explore the [Gallery](/user-guide/gallery-overview/) to manage, duplicate, and publish your graphics.
+- Learn about [Workspaces](/user-guide/workspaces-overview/) for team collaboration.
+- Connect external data with [Data Sources](/main-features/data-source-api-control/).
+- Use [On Air](/on-air/overview/) to play out your graphics live.

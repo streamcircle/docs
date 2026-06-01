@@ -1,26 +1,28 @@
 ---
 title: Manage License
-description: ...
+description: Upgrade your Tweenly license and manage payments.
 ---
 
-You can upgrade your Tweenly license at any time in the **Profile > License & Billing** section.
+Upgrade your Tweenly license at any time in the **Profile > License & Billing** section.
 
-### How to Upgrade
+## How to upgrade
 
 1. Open **Profile > License & Billing**.
 2. Click **Continue to upgrade**.
 3. Confirm by clicking **Confirm upgrade**.
-4. Unlimited license will be activated immediately.
-5. An administrator will contact you within 24 hours with payment instructions.
+4. The Unlimited license is activated immediately.
+5. A Tweenly team member will contact you within 24 hours with payment instructions.
 
-<!-- ![Profile](../../../assets/assets/profile-menu.png) -->
+<!-- ![TODO: screenshot of Profile > License & Billing](../../../assets/assets/profile-menu.png) -->
 
-### Available License Plans
+## Available license plans
 
-You can find all plans and pricing details <a href="https://tweenly.io/#pricing" target="_blank" rel="noopener noreferrer">here</a>.
+Tweenly offers two plans: Free and Unlimited. See [Free vs Unlimited](/getting-started/free-vs-unlimited/) for a feature comparison, or visit <a href="https://tweenly.io/#pricing" target="_blank" rel="noopener noreferrer">tweenly.io/pricing</a> for pricing.
 
-### Payments and Renewals
+## Payments and renewals
 
-- Payment is manual – an administrator will provide payment details.
-- If payment is not received by the due date, your license will revert to Free status.
-- Your projects and workspaces will remain intact, but Unlimited features will be disabled.
+- Payment is manual — a Tweenly team member will provide payment details.
+- If payment is not received by the due date, your license reverts to Free.
+- Your projects and workspaces remain intact, but Unlimited features are disabled.
+
+For other account settings, see [Profile](/user-guide/profile-overview/).

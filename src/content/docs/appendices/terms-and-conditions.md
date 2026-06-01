@@ -1,6 +1,6 @@
 ---
 title: Terms and Conditions
-description: ...
+description: Tweenly terms and conditions for using the application and services.
 ---
 
 _Last Updated: 16.10.2023_

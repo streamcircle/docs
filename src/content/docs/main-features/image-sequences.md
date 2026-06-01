@@ -1,9 +1,9 @@
 ---
 title: Image Sequence
-description: How to create, edit, and manage image sequences in Tweenly.
+description: Create frame-by-frame animations from numbered image files.
 ---
 
-An **image sequence** is a set of numbered images played in succession to create a frame-by-frame animation. They are useful for **animated backgrounds, complex transitions, or effects** that are difficult to reproduce with vector animation alone.  
+An **image sequence** is a set of numbered images played in succession to create a frame-by-frame animation. They are useful for **animated backgrounds, complex transitions, or effects** such as particle simulations, live-action loops, or complex 3D renders exported as frame sequences.  
 
 :::note
 Image sequences **are available in Free and Unlimited plans.** In the **Free plan**, image sequences are exported only in plain HTML format, which requires a very stable internet connection. Even then, smooth playback is not guaranteed, and sequences may appear choppy. In the **Unlimited plan**, image sequences are fully supported in both HTML and ZIP package export, ensuring smooth offline playback. 
@@ -19,10 +19,7 @@ Image sequences **are available in Free and Unlimited plans.** In the **Free pla
 Once selected, the frame rate cannot be changed. If the incorrect frame rate is chosen, you must create a new graphics file with the correct setting.
 :::
 
-:::tip
-**Why Does Frame Rate Matter?**  
-Higher frame rates (50 FPS) are ideal for fluid animations but may require more processing power. Lower frame rates (25 FPS) are suitable for simpler sequences and help reduce file size.
-:::
+Higher frame rates (50 FPS) produce fluid animation but require more processing power. Use 25 FPS for simpler sequences to reduce file size.
 
 ## Adding an Image Sequence
 

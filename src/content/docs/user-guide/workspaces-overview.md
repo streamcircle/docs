@@ -1,72 +1,77 @@
 ---
 title: Workspaces Overview
-description: Understanding personal and shared workspaces, roles, transactions, and asset management.
+description: Create workspaces, invite members, assign roles, and manage shared graphics files and assets.
 ---
 
-A **workspace** is a **private (Personal) or shared space** where users manage **graphics files, and assets**. Workspaces allow **collaboration, file organization, and asset sharing** within a team or an individual environment.
+Each **workspace** contains its own graphics files and assets. Shared workspaces let team members access and edit the same files.
 
-## Key Points of Workspaces
-- **Store and organize graphics files & assets** (images, image sequences, fonts, and data sources).   
-- **Collaborate with team members using different roles and permissions**.  
+## Personal and shared workspaces
 
-## Personal and Shared Workspaces
+Every user has at least **one Personal Workspace**. Additional shared workspaces can be created based on the user's license type.
 
-Every user has at least **one Personal Workspace**, and additional workspaces can be created based on the user’s license type:  
+| **License** | **Workspaces Available** |
+|-------------|-------------------------|
+| **Free** | 1 Personal Workspace |
+| **Unlimited** | 1 Personal Workspace + Unlimited Shared Workspaces |
 
-| **License Type**    | **Workspaces Available** |
-|---------------------|-------------------------|
-| **Free License**    | 1 Personal Workspace |
-| **Individual License** | 1 Personal Workspace + 1 Shared Workspace |
-| **Business License** | 1 Personal Workspace + 1 Shared Workspace (with 1 additional member) |
-| **Enterprise License** | 1 Personal Workspace + **Unlimited Shared Workspaces** |
-
-:::tip
-**Personal Workspaces cannot be shared**—they are for private use only.  
+:::note
+**Personal Workspaces** are for private use only and cannot be shared with other users. A personal workspace is a free space without other members.
 :::
 
-### Moving Files Between Workspaces
-- Graphics files and their linked assets are workspace-bound.
-- If a **graphics file is moved to another workspace**, all its linked **assets (images, fonts, data sources)** copy with it.  
+### Moving files between workspaces
 
-## Members
+Graphics files and their linked assets are workspace-bound. When a graphics file is moved to another workspace, all its linked assets (images, fonts, data sources) are copied with it.
 
-You can add other workspace members to share and collaborate on different graphics. These members have different roles:
-- **Owner** - The user that created the workspace has full rights to manage the workspace. He or she can manage the workspace, its members, and delete the workspace.
-- **Admin** - An Admin has the right to manage the workspace, and its members. The Admin cannot delete the workspace.
-- **Collaborator** - A collaborator has the right to create and access workspace graphics files. The Collaborator cannot manage the workspace, and its members or access transactions.
+## Members & roles
 
-With a Business licence, you can add one additional member to your own workspace; with an Enterprise licence, you can add unlimited members to each of your workspaces.
-
-
-## Workspace Members & Roles
-
-Members in a shared workspace have different levels of permissions:  
+Shared workspaces support multiple members with different permission levels:
 
 | **Role** | **Permissions** |
-|----------|---------------|
-| **Owner** | Full control: manage workspace, members, assets, transactions, and delete the workspace. |
+|----------|----------------|
+| **Owner** | Full control: manage workspace, members, assets, and transactions. Can delete the workspace. |
 | **Admin** | Manage workspace, members, and transactions. Cannot delete the workspace. |
-| **Collaborator** | Can create and access workspace files. Cannot manage workspace, members, or transactions. |
+| **Collaborator** | Create and access workspace graphics files. Cannot manage workspace, members, or access transactions. |
 
+### Adding members
 
-### Adding Members Based on License
-- **Business License** – Can add **1 additional member** to a shared workspace.  
-- **Enterprise License** – Can add **unlimited members** to each shared workspace.  
+With the **Unlimited** license, you can add members to your shared workspaces. The **Free** plan does not support shared workspaces.
 
-## Managing Assets in Workspaces
+To invite a member:
+1. Open **Workspace detail > Team members**.
+2. Click **Invite**.
+3. Enter the user's **email** and select a **role** (Admin or Collaborator).
+4. Click **Invite** to send the invitation.
 
-Since **assets** (images, fonts, data sources, etc.) are stored in workspaces:  
-- **Assets can be shared across multiple graphics files within the same workspace.**  
-- **Moving a graphics file to another workspace also moves its linked assets.**  
-- **Deleting a graphics file does not delete its assets**—they remain available for reuse.  
+If the user already has a Tweenly account, they receive an invitation notification. If not, a new account is created and login info is sent to their email.
 
-🚨 **Editing an asset affects all graphics files using it** within the workspace.  
+Invited members appear with status **Pending invite** until they accept.
 
----
+### Removing members
 
-## Key Takeaways
+1. In the member list, click the **Remove** button next to the member.
+2. Confirm the removal. This action is irreversible.
 
-- **Workspaces store and organize graphics files & assets.**  
-- **Personal Workspaces are individual-only; shared workspaces allow collaboration.**  
-- **Workspace roles define user permissions.**  
-- **Assets are workspace-bound but can be shared across multiple graphics files.**  
+## Workspace deletion
+
+:::danger
+Deleting a workspace removes all its graphics files and revokes access for all members. This action is irreversible.
+:::
+
+To delete a workspace:
+1. Open **Workspace detail**.
+2. Scroll to the **Workspace deletion** section.
+3. Click **Delete workspace** and confirm.
+
+Only the workspace **Owner** can delete a workspace.
+
+## Assets
+
+Assets are stored at the workspace level and shared across all graphics files in that workspace. For full details, see [Assets](/user-guide/assets/).
+
+## TL;DR
+
+- **Personal Workspaces** are private; **shared workspaces** enable team collaboration.
+- Three roles: **Owner** (full control), **Admin** (manage, no delete), **Collaborator** (create and access files).
+- Invite members by email — they get an account automatically if they don't have one.
+- Assets are workspace-bound and shared across all graphics files in that workspace.
+- Deleting a workspace is irreversible and removes all its content.
