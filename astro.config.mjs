@@ -107,9 +107,10 @@ export default defineConfig({
                             collapsed: true,
                             items: [
                                 {
-                                    label: "v2.1.8", link: "/release-notes/editor/v218",
+                                    label: "v2.1.9", link: "/release-notes/editor/v219",
                                     badge: { text: "current", variant: "success" }
                                 },
+                                { label: "v2.1.8", link: "/release-notes/editor/v218" },
                                 { label: "v2.1.5", link: "/release-notes/editor/v215" },
                                 { label: "v1.12.0", link: "/release-notes/editor/v1120" },
                                 { label: "v1.11.0", link: "/release-notes/editor/v1110" },
@@ -135,9 +136,10 @@ export default defineConfig({
                             collapsed: true,
                             items: [
                                 {
-                                    label: "v2.0.4", link: "/release-notes/onair/v204",
+                                    label: "v2.0.5", link: "/release-notes/onair/v205",
                                     badge: { text: "current", variant: "success" }
                                 },
+                                { label: "v2.0.4", link: "/release-notes/onair/v204" },
                             ],
                         },
                     ],
