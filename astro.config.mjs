@@ -18,26 +18,6 @@ export default defineConfig({
                 linkedin: "https://www.linkedin.com/company/tween-ly/",
                 youtube: "https://www.youtube.com/@Tweenly",
             },
-            // Biel AI chatbot – temporarily disabled
-            // head: [
-            //     {
-            //     tag: 'link',
-            //     attrs: {
-            //         rel: 'stylesheet',
-            //         href: 'https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.css',
-            //     },
-            //     },
-            //     {
-            //     tag: 'script',
-            //     attrs: {
-            //         type: 'module',
-            //         src: 'https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.esm.js',
-            //     },
-            //     },
-            // ],
-            // components: {
-            //     Footer: './src/components/BielFooter.astro',
-            // },
             sidebar: [
                 {
                     label: "Getting Started",
